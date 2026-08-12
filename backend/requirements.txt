@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+
+youtube-transcript-api
+langchain-core
+langchain-text-splitters
+langchain-community
+langchain-groq
+langchain-huggingface
+huggingface_hub
+sentence-transformers
+faiss-cpu
+tiktoken

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube RAG Chat",
+  "version": "1.0.0",
+  "description": "Ask questions about the YouTube video you're currently watching, answered from its transcript.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Chat with this video"
+  },
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*",
+    "https://www.youtube.com/*"
+  ]
+}

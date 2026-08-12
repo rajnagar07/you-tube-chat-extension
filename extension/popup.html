@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube RAG Chat</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">▶</span>
+        <span class="brand-name">Video Chat</span>
+      </div>
+      <button id="settingsToggle" class="icon-btn" title="Backend settings">⚙</button>
+    </header>
+
+    <div id="settingsPanel" class="settings-panel hidden">
+      <label for="backendUrl">Backend URL</label>
+      <input id="backendUrl" type="text" placeholder="http://localhost:8000" />
+      <button id="saveSettings" class="btn-secondary">Save</button>
+    </div>
+
+    <div id="videoBar" class="video-bar">
+      <span class="video-dot" id="statusDot"></span>
+      <span id="videoLabel">Open a YouTube video</span>
+    </div>
+
+    <main id="chat" class="chat"></main>
+
+    <form id="askForm" class="ask-form">
+      <input
+        id="questionInput"
+        type="text"
+        placeholder="Ask something about this video…"
+        autocomplete="off"
+      />
+      <button type="submit" id="askBtn" class="btn-primary">Ask</button>
+    </form>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
