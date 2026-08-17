@@ -4,6 +4,7 @@ python-dotenv
 pydantic
 
 youtube-transcript-api
+pymupdf
 langchain-core
 langchain-text-splitters
 langchain-community

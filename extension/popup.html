@@ -26,6 +26,22 @@
       <span id="videoLabel">Open a YouTube video</span>
     </div>
 
+    <div id="pdfBar" class="pdf-bar">
+      <label for="pdfInput" class="btn-secondary pdf-upload-label">
+        <span id="pdfUploadText">Upload PDF/notes</span>
+      </label>
+      <input id="pdfInput" type="file" accept="application/pdf" hidden />
+    </div>
+
+    <div id="nowExplaining" class="now-explaining hidden">
+      <div class="now-explaining-header">
+        <span class="live-pulse"></span>
+        <span>Now explaining</span>
+      </div>
+      <div id="nowExplainingTopic" class="now-explaining-topic">—</div>
+      <div id="nowExplainingMeta" class="now-explaining-meta"></div>
+    </div>
+
     <main id="chat" class="chat"></main>
 
     <form id="askForm" class="ask-form">

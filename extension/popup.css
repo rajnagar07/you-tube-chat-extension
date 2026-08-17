@@ -131,6 +131,59 @@ body {
   white-space: nowrap;
 }
 
+.pdf-bar {
+  display: flex;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pdf-upload-label {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.now-explaining {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-raised);
+}
+
+.now-explaining.hidden {
+  display: none;
+}
+
+.now-explaining-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+
+.live-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.now-explaining-topic {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.now-explaining-meta {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 2px;
+}
+
 .chat {
   flex: 1;
   overflow-y: auto;
